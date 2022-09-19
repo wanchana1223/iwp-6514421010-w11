@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      var stdArray = new Array(
+      Array("Amily",2000),
+      Array("Bummy",1995),
+      Array("Cool",1965),
+      Array("Darlie",1922),  
+      Array("Egg",2006),
+      Array("Sunny",2002),
+      Array("Money",1999),
+      Array("Milk",1998),
+      Array("Coomy",1945),
+      Array("Illy",2004)
+      );
+      
+       
+       for(var index=0;index<stdArray.length;index++){
+          document.writeIn(stdArray[index]+"<br>");
+      }
+      function isLeapYear(birthYear){
+          if(birthYear%4!=0){
+              document.write(birthYear+" is not leap year");
+          }else if(birthYear%100!=0){
+              document.write(birthYear+" is a leap year");
+          }else if(birthYear%400==0){
+              document.write(birthYear+" is a leap yaer");
+          }else{
+              document.write(birthYear+" is not a leap year");
+          }
+      }
+      document.write(isLeapYear(2022));    
+  </script>
+
+  <table class="table table-hover">
+    <thead> 
+      <tr>
+           <th>Name</th>
+           <th>Birth Year</th>
+           <th>LeapYear</th>
+      </tr>
+    </thead>
+    <tbody>
+      <script type="text/javascript">
+         for(var i=0;i<stdArray.length;i++){
+             document.write("<tr>");
+             document.write("<td>");
+             document.write(stdArray[i][0]);
+             document.write("</td>");
+             document.write("<td>");
+             document.write(stdArray[i][1]);
+             document.write("</td>");
+             document.write("<td>");
+             isLeapYear(stdArray[i][1]);
+             document.write("</td>");
+             document.write("</tr>");
+         }
+      </script>
+    </tbody>
+  </table>
+        
+      
+    
+        <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js
+" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js
+" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
